@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/abc_text_size_display_2_material"
+        android:layout_marginTop="@dimen/abc_action_bar_content_inset_with_nav"
+        android:layout_marginRight="@dimen/abc_text_size_body_1_material"
+     >
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/reg"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="35sp"
+                android:padding="0dp"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="47.3dp"
+                android:text="@string/ter"
+                android:textStyle="bold"
+                android:textColor="@color/xyz"
+                android:textSize="35sp"
+                android:padding="0dp"
+            />
+     </LinearLayout>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+             android:layout_marginLeft="@dimen/abc_text_size_display_2_material"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/dont"
+                android:padding="0dp"
+               
+                android:textSize="15sp"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/abc_action_bar_overflow_padding_start_material"
+                android:text="@string/loog"
+                android:textColor="@color/lightread"
+                android:textSize="15sp"
+                android:id="@+id/newaccount"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/abc_action_bar_stacked_max_height"
+        android:layout_marginTop="@dimen/abc_action_button_min_width_overflow_material"
+        
+        android:layout_marginRight="@dimen/abc_action_bar_stacked_max_height">
+     <EditText
+        android:id="@+id/nameuser"
+        
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:drawablePadding="@dimen/abc_action_bar_content_inset_material"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:background="@drawable/broder"
+        android:drawableLeft="@drawable/persons"
+        android:paddingHorizontal="@dimen/abc_action_bar_overflow_padding_end_material"
+         android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+       />
+         <EditText
+        android:id="@+id/emailaddress"
+         
+        
+         
+        android:layout_marginTop="@dimen/abc_action_bar_overflow_padding_end_material"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+       
+        android:drawablePadding="@dimen/abc_action_bar_content_inset_material"
+        android:hint="@string/emailss"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/broder"
+        android:drawableLeft="@drawable/mail"
+        android:paddingHorizontal="@dimen/abc_action_bar_overflow_padding_end_material"
+        />
+        <EditText
+        android:id="@+id/usernames"
+        
+         android:singleLine="true"
+         
+        android:layout_marginTop="@dimen/abc_action_bar_overflow_padding_end_material"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+       android:drawablePadding="@dimen/abc_action_bar_content_inset_material"
+        android:gravity="center_vertical"
+        android:hint="@string/user"
+        android:inputType="text"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+        android:background="@drawable/broder"
+        android:drawableLeft="@drawable/persons"
+        android:paddingHorizontal="@dimen/abc_action_bar_overflow_padding_end_material"
+       
+        />
+        <EditText
+        android:id="@+id/password"
+       
+          android:imeOptions="actionNext"
+        
+        android:layout_marginTop="@dimen/abc_action_bar_overflow_padding_end_material"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+       
+         android:drawablePadding="@dimen/abc_action_bar_content_inset_material"
+        android:hint="@string/pass"
+        android:inputType="textPassword"
+        android:background="@drawable/broder"
+        android:drawableLeft="@drawable/key"
+        android:paddingHorizontal="@dimen/abc_action_bar_overflow_padding_end_material"
+        />
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:text="@string/register"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:layout_gravity="center"
+        android:id="@+id/registerbutton"
+        android:padding="10dp"
+        android:backgroundTint="@color/sky"
+        android:textSize="17dp"
+        android:layout_marginTop="45dp"
+        app:cornerRadius="50dp" 
+         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:text="@string/onregister"
+         android:textSize="20sp"
+        android:layout_marginLeft="@dimen/abc_list_item_height_large_material"
+        
+        android:layout_gravity="center_horizontal"/>
+
+    
+   <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+       android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/abc_select_dialog_padding_start_material"
+      >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:src="@drawable/facebok"
+            
+            android:id="@id/facebook"
+            />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="@dimen/abc_action_bar_content_inset_material"
+            android:src="@drawable/google"
+           
+            
+            android:id="@+id/google"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
